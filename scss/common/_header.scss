@@ -1,0 +1,36 @@
+header{
+    width: 90%;
+    height: 10vh;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5vw;
+
+    ul{
+        width: 30%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+        li{
+
+            a{
+                font: 14px/1 "arial";
+                color: black;
+            }
+        }
+    }
+    .logo{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font: bold 30px/1 "arial";
+            text-align: center;
+        }
+    }
+}
