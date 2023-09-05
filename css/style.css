@@ -53,6 +53,7 @@ header .logo p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 50px;
 }
 .content .text {
   width: 45%;
@@ -116,10 +117,115 @@ header .logo p {
   clear: both;
 }
 
-.wrap {
+.clickObj_ect .cir {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c39ae3;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 1s;
+}
+.clickObj_ect .cir .close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #B7C4F9;
+  font: 14px/40px "arial";
+  color: #000;
+  border: 2px solid black;
+}
+.clickObj_ect .circle1.on {
+  left: 0;
+}
+.clickObj_ect .circle2 {
+  left: 100%;
+}
+.clickObj_ect .circle2.on {
+  left: 0%;
+}
+.clickObj_ect .circle3.on {
+  left: 0;
+}
+.clickObj_ect .circle4 {
+  left: 100%;
+}
+.clickObj_ect .circle4.on {
+  left: 0%;
+}
+
+#cir2Wrap {
   width: 100%;
+  padding: 50px;
+}
+#cir2Wrap .loading {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  opacity: 1;
+}
+#cir2Wrap .loading.off {
+  opacity: 0;
+  z-index: -1;
+}
+#cir2Wrap #list {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s;
+}
+#cir2Wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#cir2Wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#cir2Wrap #list li {
+  width: 16.6666666667%;
+  float: left;
+  padding: 10px;
+}
+#cir2Wrap #list li div {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+#cir2Wrap #list li div a img {
+  width: 100%;
+}
+#cir2Wrap #list li div p {
+  font: 12px/1.2 "arial";
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#cir2Main aside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrap {
+  width: 100vw;
   height: 100vh;
   background-color: #BBACF2;
+  position: relative;
+  overflow: hidden;
 }
 
 .intro {

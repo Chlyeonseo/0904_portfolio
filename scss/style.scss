@@ -2,11 +2,14 @@
 @import "./common/reset";
 @import "./common/header";
 @import "./main/content";
+@import "./main/api_gallery";
 
 .wrap{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #BBACF2;
+    position: relative;
+    overflow: hidden;
 }
 .intro{
     display: none;

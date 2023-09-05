@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
 
+    border-radius: 50px;
     
 
     .text{
@@ -51,9 +52,6 @@
             float: left;
             border-radius: 50%;
             
-            &:hover{
-                
-            }
             &.cir1{
                 margin: 0 1vw 1vh 0;
             }
@@ -80,4 +78,59 @@
     }
     
     
+}
+.clickObj_ect{
+    .cir{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(#C39AE3, 1.0);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: 1s;
+
+        .close{
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            display: flex;
+            width: 200px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #B7C4F9;
+            font: 14px/40px "arial";
+            color: #000;
+            border: 2px solid black;
+        }
+        
+    }
+    .circle1{
+        
+        &.on{
+            left: 0;
+        }
+    }
+    .circle2{
+        left: 100%;
+
+        &.on{
+            left: 0%;
+        }
+    }
+    .circle3{
+        
+
+        &.on{
+            left: 0;
+        }
+    }
+    .circle4{
+        left: 100%;
+
+        &.on{
+            left: 0%;
+        }
+    }
 }

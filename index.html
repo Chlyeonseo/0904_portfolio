@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/main.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -34,24 +35,47 @@
                 </div>
             </div>
             <div class="clickObj">
-                <div class="cir1"><img src="" alt=""></div>
+                <div class="cir1 on"><img src="" alt=""></div>
                 <div class="cir2"><img src="" alt=""></div>
                 <div class="cir3"><img src="" alt=""></div>
                 <div class="cir4"><img src="" alt=""></div>
             </div>
+
+            
         </div>
-        <aside class="circle1">
+        <div class="clickObj_ect">
+            <aside class="cir circle1">
             <!-- clickObj 클릭 후 나타날 애들 -->
-        </aside>
-        <aside class="circle2">
-            
-        </aside>
-        <aside class="circle3">
-            
-        </aside>
-        <aside class="circle4">
-            
-        </aside>
+                <p class="close">
+                    close
+                </p>
+            </aside>
+            <aside class="cir circle2">
+                <main id="cir2Main">
+                    <section id="cir2Wrap">
+                        <img src="./img/6.gif" class="loading" alt="">
+                        <ul id="list">
+                            <!-- li들이 동적으로 만들어지는 자리 -->
+                        </ul>
+                    </section>
+                    <!-- aside위치 -->
+                </main>
+                <p class="close">
+                    close
+                </p>
+            </aside>
+            <aside class="cir circle3">
+                <p class="close">
+                    close
+                </p>
+            </aside>
+            <aside class="cir circle4">
+                <p class="close">
+                    close
+                </p>
+            </aside>
+        </div>
+        
     </div>
     
     <div class="intro">
