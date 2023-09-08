@@ -3,6 +3,7 @@
 @import "./common/reset";
 @import "./common/header";
 @import "./main/content";
+@import "./main/circle1";
 @import "./main/circle2";
 @import "./main/circle3";
 
@@ -14,5 +15,12 @@
     overflow: hidden;
 }
 .intro{
+    width: 100vw;
+    height: 100vh;
+    background-color: #BBACF2;
     display: none;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

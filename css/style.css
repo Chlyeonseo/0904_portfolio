@@ -153,6 +153,49 @@ header .logo p {
   left: 100%;
 }
 
+.circle1 {
+  width: 100%;
+  height: 100%;
+}
+.circle1 .circle1_box {
+  width: 70%;
+  height: 60%;
+  background-color: white;
+  margin-left: 15vw;
+  margin-top: 18vh;
+  border-radius: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circle1 .circle1_box h2 {
+  height: 10%;
+  display: block;
+  text-align: center;
+  font: bold 50px/10% "arial";
+  transform: rotate(-90deg);
+}
+.circle1 .circle1_box .inner {
+  width: 90%;
+  margin: 1vw;
+}
+.circle1 .circle1_box .inner article {
+  width: 45%;
+  height: 45%;
+  float: left;
+  margin: 10% 2%;
+}
+.circle1 .circle1_box .inner article h2 {
+  width: 100%;
+  height: 30%;
+}
+.circle1 .circle1_box .inner::after, .circle1 .circle1_box .inner::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #cir2Wrap {
   width: 100%;
   padding: 50px;
@@ -246,6 +289,9 @@ aside.circle3 .cir3Pics > div .backCir3_2 {
 aside.circle3 .cir3Pics > div .backCir3_3 {
   background-color: #A79AE3;
 }
+aside.circle3 .cir3Pics > div.on {
+  background-color: rgba(51, 51, 51, 0.3);
+}
 aside.circle3 .cir3Pics::after {
   content: "";
   display: block;
@@ -275,7 +321,14 @@ aside.circle3 h2 {
 }
 
 .intro {
+  width: 100vw;
+  height: 100vh;
+  background-color: #BBACF2;
   display: none;
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

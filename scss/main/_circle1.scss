@@ -1,0 +1,48 @@
+.circle1{
+    width: 100%;
+    height: 100%;
+
+    .circle1_box{
+        width: 70%;
+        height: 60%;
+        background-color: white;
+        margin-left: 15vw;
+        margin-top: 18vh;
+        border-radius: 80px;
+        padding: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            height: 10%;
+            display: block;
+            text-align: center;
+            font: bold 50px/10% "arial";
+            transform: rotate(-90deg);
+        }
+        .inner{
+            width: 90%;
+            
+            margin: 1vw;
+            article{
+                width: 45%;
+                height: 45%;
+                float: left;
+                margin: 10% 2%;
+
+                h2{
+                   width: 100%;
+                   height: 30%; 
+                }
+            }
+            &::after,&::before{
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        
+    }
+}
