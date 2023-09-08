@@ -117,7 +117,7 @@ header .logo p {
   clear: both;
 }
 
-.clickObj_ect .cir {
+.clickObj_ect > aside {
   width: 100vw;
   height: 100vh;
   background-color: #c39ae3;
@@ -125,8 +125,9 @@ header .logo p {
   top: 0;
   left: -100%;
   transition: 1s;
+  opacity: 0;
 }
-.clickObj_ect .cir .close {
+.clickObj_ect > aside .close {
   position: absolute;
   top: 30px;
   right: 40px;
@@ -141,23 +142,15 @@ header .logo p {
   color: #000;
   border: 2px solid black;
 }
-.clickObj_ect .circle1.on {
+.clickObj_ect > aside.on {
   left: 0;
+  opacity: 1;
 }
 .clickObj_ect .circle2 {
   left: 100%;
 }
-.clickObj_ect .circle2.on {
-  left: 0%;
-}
-.clickObj_ect .circle3.on {
-  left: 0;
-}
 .clickObj_ect .circle4 {
   left: 100%;
-}
-.clickObj_ect .circle4.on {
-  left: 0%;
 }
 
 #cir2Wrap {
@@ -218,6 +211,59 @@ header .logo p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+aside.circle3 {
+  background-color: #fff;
+}
+aside.circle3 .cir3Pics {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  position: absolute;
+}
+aside.circle3 .cir3Pics > div {
+  width: 25%;
+  height: 70%;
+  overflow: hidden;
+}
+aside.circle3 .cir3Pics > div > div {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+aside.circle3 .cir3Pics > div > div:hover {
+  transform: scale(2);
+}
+aside.circle3 .cir3Pics > div .backCir3_1 {
+  background: linear-gradient(90deg, #AAF6FA, #9AC4E3, #A79AE3);
+}
+aside.circle3 .cir3Pics > div .backCir3_2 {
+  background-color: #9AC4E3;
+}
+aside.circle3 .cir3Pics > div .backCir3_3 {
+  background-color: #A79AE3;
+}
+aside.circle3 .cir3Pics::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 90%;
+  height: 2px;
+  background-color: black;
+  margin-left: 5%;
+}
+aside.circle3 h2 {
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
 }
 
 .wrap {

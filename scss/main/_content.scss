@@ -80,7 +80,7 @@
     
 }
 .clickObj_ect{
-    .cir{
+    >aside{
         width: 100vw;
         height: 100vh;
         background-color: rgba(#C39AE3, 1.0);
@@ -88,6 +88,7 @@
         top: 0;
         left: -100%;
         transition: 1s;
+        opacity: 0;
 
         .close{
             position: absolute;
@@ -104,33 +105,21 @@
             color: #000;
             border: 2px solid black;
         }
-        
-    }
-    .circle1{
-        
         &.on{
             left: 0;
+            opacity: 1;
         }
+    }
+    .circle1{
+    
     }
     .circle2{
         left: 100%;
-
-        &.on{
-            left: 0%;
-        }
     }
     .circle3{
-        
-
-        &.on{
-            left: 0;
-        }
+    
     }
     .circle4{
         left: 100%;
-
-        &.on{
-            left: 0%;
-        }
     }
 }

@@ -1,8 +1,10 @@
 @charset "utf-8";
+
 @import "./common/reset";
 @import "./common/header";
 @import "./main/content";
-@import "./main/api_gallery";
+@import "./main/circle2";
+@import "./main/circle3";
 
 .wrap{
     width: 100vw;
