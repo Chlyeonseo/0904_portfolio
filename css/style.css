@@ -312,6 +312,78 @@ aside.circle3 h2 {
   text-align: center;
 }
 
+.wrap2 {
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+}
+.wrap2 section {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+.wrap2 section > h2 {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font: bold 30px/1 "arial";
+}
+.wrap2 section > h2::after {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  content: "";
+  display: block;
+  margin-top: 50px;
+  opacity: 0.4;
+}
+.wrap2 section .inner2 {
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
+}
+.wrap2 section .inner2 .inner2_box1 {
+  float: left;
+  width: 30%;
+  height: 100%;
+  background-color: aqua;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+.wrap2 section .inner2 .inner2_box2 {
+  float: left;
+  width: 68%;
+  height: 48%;
+  margin-bottom: 2%;
+  background-color: lightcyan;
+  border-radius: 10px;
+}
+.wrap2 section .inner2 .inner2_box3 {
+  float: left;
+  width: 33%;
+  height: 48%;
+  margin-right: 2%;
+  background-color: lightskyblue;
+  border-radius: 10px;
+}
+.wrap2 section .inner2 .inner2_box4 {
+  float: left;
+  width: 33%;
+  height: 48%;
+  background-color: deepskyblue;
+  border-radius: 10px;
+}
+.wrap2 section .inner2 .inner2Box {
+  overflow: hidden;
+}
+.wrap2 section p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
 .wrap {
   width: 100vw;
   height: 100vh;
