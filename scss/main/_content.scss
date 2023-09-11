@@ -11,6 +11,7 @@
 
     border-radius: 50px;
     
+    
 
     .text{
         width: 45%;
@@ -89,10 +90,11 @@
         left: -100%;
         transition: 1s;
         opacity: 0;
+        overflow: auto;
 
         .close{
             position: absolute;
-            top: 30px;
+            top: 17px;
             right: 40px;
             display: flex;
             width: 200px;
@@ -108,6 +110,7 @@
         &.on{
             left: 0;
             opacity: 1;
+            overflow: hidden;
         }
     }
     .circle1{
