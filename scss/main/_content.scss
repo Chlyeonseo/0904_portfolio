@@ -114,15 +114,23 @@
         }
     }
     .circle1{
-    
+        width: 100%;
+        height: 100%;
+        @import "./circle1";
     }
     .circle2{
         left: 100%;
+        @import "./circle2";
     }
     .circle3{
-    
+        background-color: #fff;
+        @import "./circle3";
     }
     .circle4{
         left: 100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #DCDBF9;
+        @import "./circle4";    
     }
 }

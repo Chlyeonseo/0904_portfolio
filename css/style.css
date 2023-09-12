@@ -148,18 +148,11 @@ header .logo p {
   opacity: 1;
   overflow: hidden;
 }
-.clickObj_ect .circle2 {
-  left: 100%;
-}
-.clickObj_ect .circle4 {
-  left: 100%;
-}
-
-.circle1 {
+.clickObj_ect .circle1 {
   width: 100%;
   height: 100%;
 }
-.circle1 .circle1_box {
+.clickObj_ect .circle1 .circle1_box {
   width: 70%;
   height: 60%;
   background-color: white;
@@ -171,38 +164,40 @@ header .logo p {
   justify-content: space-between;
   align-items: center;
 }
-.circle1 .circle1_box h2 {
+.clickObj_ect .circle1 .circle1_box h2 {
   height: 10%;
   display: block;
   text-align: center;
   font: bold 50px/10% "arial";
   transform: rotate(-90deg);
 }
-.circle1 .circle1_box .inner {
+.clickObj_ect .circle1 .circle1_box .inner {
   width: 90%;
   margin: 1vw;
 }
-.circle1 .circle1_box .inner article {
+.clickObj_ect .circle1 .circle1_box .inner article {
   width: 45%;
   height: 45%;
   float: left;
   margin: 10% 2%;
 }
-.circle1 .circle1_box .inner article h2 {
+.clickObj_ect .circle1 .circle1_box .inner article h2 {
   width: 100%;
   height: 30%;
 }
-.circle1 .circle1_box .inner::after, .circle1 .circle1_box .inner::before {
+.clickObj_ect .circle1 .circle1_box .inner::after, .clickObj_ect .circle1 .circle1_box .inner::before {
   content: "";
   display: block;
   clear: both;
 }
-
-#cir2Wrap {
+.clickObj_ect .circle2 {
+  left: 100%;
+}
+.clickObj_ect .circle2 #cir2Main #cir2Wrap {
   width: 100%;
   padding: 50px;
 }
-#cir2Wrap .loading {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap .loading {
   width: 100px;
   position: absolute;
   top: 50%;
@@ -211,57 +206,55 @@ header .logo p {
   transition: 1s;
   opacity: 1;
 }
-#cir2Wrap .loading.off {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap .loading.off {
   opacity: 0;
   z-index: -1;
 }
-#cir2Wrap #list {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap #list {
   transform: translateY(100px);
   opacity: 0;
   transition: 1s;
 }
-#cir2Wrap #list.on {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap #list.on {
   opacity: 1;
   transform: translateY(0px);
 }
-#cir2Wrap #list::after {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap #list::after {
   content: "";
   display: block;
   clear: both;
 }
-#cir2Wrap #list li {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap #list li {
   width: 16.6666666667%;
   float: left;
   padding: 10px;
 }
-#cir2Wrap #list li div {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap #list li div {
   width: 100%;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
-#cir2Wrap #list li div a img {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap #list li div a img {
   width: 100%;
 }
-#cir2Wrap #list li div p {
+.clickObj_ect .circle2 #cir2Main #cir2Wrap #list li div p {
   font: 12px/1.2 "arial";
   color: #777;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-#cir2Main aside {
+.clickObj_ect .circle2 #cir2Main #cir2Main aside {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-aside.circle3 {
+.clickObj_ect .circle3 {
   background-color: #fff;
 }
-aside.circle3 .cir3Pics {
+.clickObj_ect .circle3 .cir3Pics {
   width: 100%;
   height: 60%;
   display: flex;
@@ -269,32 +262,32 @@ aside.circle3 .cir3Pics {
   justify-content: space-evenly;
   position: absolute;
 }
-aside.circle3 .cir3Pics > div {
+.clickObj_ect .circle3 .cir3Pics > div {
   width: 25%;
   height: 70%;
   overflow: hidden;
 }
-aside.circle3 .cir3Pics > div > div {
+.clickObj_ect .circle3 .cir3Pics > div > div {
   width: 100%;
   height: 100%;
   transition: 1s;
 }
-aside.circle3 .cir3Pics > div > div:hover {
+.clickObj_ect .circle3 .cir3Pics > div > div:hover {
   transform: scale(2);
 }
-aside.circle3 .cir3Pics > div .backCir3_1 {
+.clickObj_ect .circle3 .cir3Pics > div .backCir3_1 {
   background: linear-gradient(90deg, #AAF6FA, #9AC4E3, #A79AE3);
 }
-aside.circle3 .cir3Pics > div .backCir3_2 {
+.clickObj_ect .circle3 .cir3Pics > div .backCir3_2 {
   background-color: #9AC4E3;
 }
-aside.circle3 .cir3Pics > div .backCir3_3 {
+.clickObj_ect .circle3 .cir3Pics > div .backCir3_3 {
   background-color: #A79AE3;
 }
-aside.circle3 .cir3Pics > div.on {
+.clickObj_ect .circle3 .cir3Pics > div.on {
   background-color: rgba(51, 51, 51, 0.3);
 }
-aside.circle3 .cir3Pics::after {
+.clickObj_ect .circle3 .cir3Pics::after {
   content: "";
   display: block;
   position: absolute;
@@ -305,13 +298,107 @@ aside.circle3 .cir3Pics::after {
   background-color: black;
   margin-left: 5%;
 }
-aside.circle3 h2 {
+.clickObj_ect .circle3 h2 {
   display: block;
   position: absolute;
   bottom: 20%;
   left: 0%;
   width: 100%;
   text-align: center;
+}
+.clickObj_ect .circle4 {
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #DCDBF9;
+}
+.clickObj_ect .circle4 .mSlide {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(183, 196, 249, 0.4);
+  overflow: hidden;
+  position: relative;
+}
+.clickObj_ect .circle4 .mSlide ul {
+  width: 100%;
+  height: 200%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clickObj_ect .circle4 .mSlide ul li {
+  width: 80%;
+  height: 16.6666666667%;
+  border-radius: 30px;
+  border: 1px solid #C39AE3;
+  margin: 20px;
+  transition: 0.5s;
+  padding: 10px;
+}
+.clickObj_ect .circle4 .mSlide ul li:nth-of-type(1) {
+  transform: scale(0.7);
+  opacity: 0.4;
+}
+.clickObj_ect .circle4 .mSlide ul li:nth-of-type(2) {
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+.clickObj_ect .circle4 .mSlide ul li:nth-of-type(3) {
+  transform: scale(1.2);
+  opacity: 1;
+}
+.clickObj_ect .circle4 .mSlide ul li:nth-of-type(4) {
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+.clickObj_ect .circle4 .mSlide ul li:nth-of-type(5) {
+  transform: scale(0.7);
+  opacity: 0.4;
+}
+.clickObj_ect .circle4 .mSlide ul li h3 {
+  font: bold 20px/1 "arial";
+  color: #000;
+}
+.clickObj_ect .circle4 .mSlide ul li p {
+  font: 14px/1 "arial";
+}
+.clickObj_ect .circle4 .mSlide .btns {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.clickObj_ect .circle4 .mSlide .btns .prev {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font: 30px/50px "arial";
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.clickObj_ect .circle4 .mSlide .btns .prev:hover {
+  background-color: #C39AE3;
+  color: #DCDBF9;
+}
+.clickObj_ect .circle4 .mSlide .btns .next {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font: 30px/50px "arial";
+  color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.clickObj_ect .circle4 .mSlide .btns .next:hover {
+  background-color: #C39AE3;
+  color: #DCDBF9;
 }
 
 .wrap2 {
