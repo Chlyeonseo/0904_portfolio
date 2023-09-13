@@ -132,3 +132,30 @@ function iso() {
 
 // ------------------------circle3----------
 //-----------------------------circle4-----------------
+const mSlide = document.querySelector(".mSlide");
+const mUl = mSlide.querySelector("ul");
+const lis = mUl.querySelectorAll("li");
+const mPrev = mSlide.querySelector(".prev");
+const mNext = mSlide.querySelector(".next");
+let enableClick = true;
+
+mUl.prepend(mUl.lastElementChild);
+mUl.prepend(mUl.lastElementChild);
+
+
+
+mPrev.addEventListener("click",(e)=>{
+    e.preventDefault();
+    if(enableClick){
+        enableClick = false;
+        mUl.prepend(mUl.lastElementChild);
+
+        setTimeout(() => {
+            enableClick = true;
+        }, 1000);
+    }
+})
+mNext.addEventListener("click",(e)=>{
+    e.preventDefault();
+    mUl.append(mUl.firstElementChild);
+})
