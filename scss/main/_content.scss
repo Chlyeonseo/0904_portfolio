@@ -36,7 +36,7 @@
                     padding: 10px;
                 }
                 p{
-                    font: bold 1vw/1 ;
+                    font: bold 1vw/1 "arial";
                 }
             }
         }
@@ -50,6 +50,7 @@
             background-color: #B7C4F9;
             float: left;
             border-radius: 50%;
+            cursor: pointer;
             
             &.cir1{
                 margin: 0 1vw 1vh 0;
@@ -135,58 +136,37 @@
 
 @media screen and (max-width : 277px) {
     .content{
-        width: 70%;
         height: 80vh;
         margin-left: 12vw;
         margin-top:5vh;
-        background-color: white;
     
         display: block;
-        justify-content: space-between;
-        align-items: center;
-    
-        border-radius: 50px;
-    
         .text{
             width: 100%;
             height: 50%;
-            position: relative;
 
             h1{
                 font: bold 6vw/1 "arial";
-                color: #000;
-                border-bottom: 1px solid black;
-                position: absolute;
-                top: 10%;
                 left: 10%;
+                top: 15%;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
             }
             .subs{
                 width: 80%;
-                position: absolute;
-                top: 15%;
+                top: 30%;
                 left: 50%;
                 transform: translateX(-50%);
     
                 .subTxt{
-                    margin-top: 1vw;
                     position: relative;
+                    padding: 5px;
                     h2{
-                        font: bold 2vw/1 "arial";
-                        color: #111;
-                        padding: 10px;
-                        
-                        &::after{
-                            content: "";
-                            display: block;
-                            width: 100%;
-                            height: 1px;
-                            background-color: rgba(0, 0, 0, 0.3);
-                            position: absolute;
-                            left: 0%;
-                        }
+                        padding: 0;
+                        text-align: center;
                     }
                     p{
                         font: bold 0.5vw/1 "arial";
+                        padding: 5px;
                     }
                 }
             }
@@ -195,19 +175,18 @@
             width: 100%;
             display: inline-block;
             height: 40%;
-            padding-left: 10%;
+            padding-left: 15%;
+            padding-top: 10%;
             >div{
                 width: 40%;
                 height: 25vw;
-                background-color: #B7C4F9;
-                border-radius: 50%;
                 flex-wrap: wrap;
                 
                 &.cir1{
-                    margin: 0 1vw 1vh 0;
+                    margin: 0 1vw 1vw 0;
                 }
                 &.cir2{
-                    margin: 0 0 1vh 0;
+                    margin: 0 0 1vw 0;
                 }
                 &.cir3{
                     margin: 0 1vw 0 0;
@@ -215,16 +194,6 @@
                 &.cir4{
                     margin: 0 0 0 0;
                 }
-                &::before{
-                    width: 13vw;
-                    height: 13vw;
-                    background-color: white;
-                }
-            }
-            &::after,&::before{
-                content: "";
-                display: block;
-                clear: both;
             }
         }
         
@@ -232,56 +201,11 @@
     }
     .clickObj_ect{
         >aside{
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(#C39AE3, 1.0);
-            position: absolute;
-            top: 0;
-            left: -100%;
-            transition: 1s;
-            opacity: 0;
-            overflow: auto;
-    
             .close{
-                position: absolute;
-                top: 17px;
-                right: 40px;
-                display: flex;
-                width: 200px;
-                height: 40px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 20px;
-                background-color: #B7C4F9;
-                font: 14px/40px "arial";
-                color: #000;
-                border: 2px solid black;
+                width: 40px;
+                border: 1px solid white;
+                background-color: white;
             }
-            &.on{
-                left: 0;
-                opacity: 1;
-                overflow: hidden;
-            }
-        }
-        .circle1{
-            width: 100%;
-            height: 100%;
-            @import "./circle1";
-        }
-        .circle2{
-            left: 100%;
-            @import "./circle2";
-        }
-        .circle3{
-            background-color: #fff;
-            @import "./circle3";
-        }
-        .circle4{
-            left: 100%;
-            width: 100%;
-            height: 100vh;
-            background-color: #DCDBF9;
-            @import "./circle4";    
         }
     }
 }

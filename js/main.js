@@ -2,6 +2,7 @@ const clickObj = document.querySelectorAll(".clickObj>div");
 const clickObj_ect = document.querySelectorAll(".clickObj_ect aside");
 const closeBtn = document.querySelectorAll(".close");
 const Wrap2 = document.querySelector(".wrap2");
+const headerHome = document.querySelector("header >a");
 
 clickObj.forEach((el,index) => {
     el.addEventListener("click", () => {
@@ -13,6 +14,7 @@ clickObj.forEach((el,index) => {
         }
         clickObj_ect[index].classList.add("on");
         Wrap2.style.display = "none";
+        headerHome.style.display = "none";
     })
 });
 
@@ -20,6 +22,7 @@ closeBtn.forEach((el, index) => {
     el.addEventListener("click", () => {
         clickObj_ect[index].classList.remove("on");
         Wrap2.style.display = "block";
+        headerHome.style.display = "block";
     })
 })
 
