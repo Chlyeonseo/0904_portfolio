@@ -6,7 +6,6 @@ $deg : 50deg;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-color: #ececec;
 
     .slide_wrap{
         width: $size;
@@ -36,7 +35,7 @@ $deg : 50deg;
                 transition: 1s;
 
                 h2{
-                    font: normal 24px/1 "anton";
+                    font: normal 24px/1 "Playfair Display";
                     color: #ccc;
                     position: absolute;
                     top: 120%;
@@ -238,7 +237,7 @@ $deg : 50deg;
         transition: 0.5s;
 
         h2{
-            font: 12vw/1 "anton";
+            font: 12vw/1 "Playfair Display";
             color: #fff;
             margin-bottom: 40px;
             opacity: 0;

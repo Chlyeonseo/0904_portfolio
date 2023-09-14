@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +19,7 @@ header {
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-left: 5vw;
   position: relative;
 }
@@ -26,12 +27,23 @@ header ul {
   width: 30%;
   height: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-end;
 }
+header ul li {
+  width: 33.3333333333%;
+  height: 100%;
+}
 header ul li a {
-  font: 14px/1 "arial";
+  font: 14px/5vh "arial";
   color: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+header ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 header .logo {
   width: 20%;
@@ -55,51 +67,53 @@ header > a {
   border-radius: 50%;
   text-align: center;
   border: 1px solid black;
+  z-index: 10;
 }
 
-.sub2Header {
+#slideHeader {
   width: 90%;
   height: 10vh;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 5vw;
   position: relative;
 }
-.sub2Header ul {
+#slideHeader ul {
   width: 30%;
   height: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
 }
-.sub2Header ul li a {
+#slideHeader ul li a {
   font: 14px/1 "arial";
-  color: black;
+  color: white;
 }
-.sub2Header .logo {
+#slideHeader .logo {
   width: 20%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sub2Header .logo p {
+#slideHeader .logo p {
   font: bold 30px/1 "arial";
   text-align: center;
+  color: #fff;
 }
-.sub2Header > a {
+#slideHeader > a {
   position: fixed;
   top: 20%;
   right: 4vw;
   font: bold 20px/70px "arial";
-  color: #000;
+  color: #fff;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .content {
@@ -581,7 +595,6 @@ header > a {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: #ececec;
 }
 .slide_fi .slide_wrap {
   width: 400px;
@@ -610,7 +623,7 @@ header > a {
   transition: 1s;
 }
 .slide_fi .slide_wrap ul li h2 {
-  font: normal 24px/1 "anton";
+  font: normal 24px/1 "Playfair Display";
   color: #ccc;
   position: absolute;
   top: 120%;
@@ -791,7 +804,7 @@ header > a {
   transition: 0.5s;
 }
 .slide_fi .pop h2 {
-  font: 12vw/1 "anton";
+  font: 12vw/1 "Playfair Display";
   color: #fff;
   margin-bottom: 40px;
   opacity: 0;
@@ -870,15 +883,33 @@ header > a {
   overflow: hidden;
 }
 
-.intro {
-  width: 100vw;
-  height: 100vh;
-  background-color: #BBACF2;
-  display: none;
-  transition: 1s;
+#galleryBody {
+  position: relative;
+}
+#galleryBody::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  content: "";
+  display: block;
+  opacity: 0.5;
+  background-image: url(../img/7345549.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#SlideBody {
+  position: relative;
+}
+#SlideBody::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/AdobeStock_182973327.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

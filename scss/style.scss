@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
 @import "./common/reset";
 @import "./common/header";
 @import "./main/content";
@@ -14,13 +14,34 @@
     position: relative;
     overflow: hidden;
 }
-.intro{
-    width: 100vw;
-    height: 100vh;
-    background-color: #BBACF2;
-    display: none;
-    transition: 1s;
-    position: absolute;
-    top: 0;
-    left: 0;
+#galleryBody{
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: "";
+        display: block;
+        opacity: 0.5;
+        background-image: url(../img/7345549.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+#SlideBody{
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../img/AdobeStock_182973327.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
 }
