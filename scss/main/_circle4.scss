@@ -140,3 +140,149 @@
         }
     }
 }
+
+@media screen and (max-width : 277px) {
+    
+    .mSlide{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: rgba($color: #B7C4F9, $alpha: 0.4);
+        overflow: hidden;
+        position: relative;
+
+        .slideS{
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            ul{
+                width: 100%;
+                height: calc(100% * 10);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                li{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 80%;
+                    height: calc(100% / 10);
+                    border-radius: 30px;
+                    border: 1px solid #C39AE3;
+                    margin: 20px;
+                    transform: scale(0.6);
+                    transition: 1s;
+                    background-position: 7777777777777px;
+                    padding: 30px;
+                    opacity: 0;
+
+                    &:nth-of-type(1){
+                        transform: translateY(-200%) scale(0.7);
+                        opacity: 0.4;
+                        transition: 1s;
+                    }
+                    &:nth-of-type(2){
+                        transform: translateY(-100%) scale(0.7);
+                        opacity: 0.6;
+                        transition: 1s;
+                    }
+                    &:nth-of-type(3){
+                        transform: translateY(0) scale(1);
+                        opacity: 1;
+                        transition: 1s;
+                    }
+                    &:nth-of-type(4){
+                        transform: translateY(100%) scale(0.7);
+                        opacity: 0.6;
+                        transition: 1s;
+                    }
+                    &:nth-of-type(5){
+                        transform: translateY(200%) scale(0.7);
+                        opacity: 0.4;
+                        transition: 1s;
+                    }
+                    &:nth-of-type(6){
+                        transform: translateY(300%) scale(0.7) ;
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    &:nth-of-type(7){
+                        transform: scale(0.7) translateY(400%);
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    &:nth-of-type(8){
+                        transform: scale(0.7) translateY(50%);
+                        opacity: 0;
+                    }
+                    &:nth-of-type(9){
+                        transform: translateY(-400%) scale(0.7);
+                        opacity: 0;
+                    }
+                    &:nth-of-type(10){
+                        transform: translateY(-300%) scale(0.7);
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    h3{
+                        margin-bottom: 10px;
+                        font: bold 20px/1 "arial";
+                        color: #000;
+                    }
+                    p{
+                        font: 14px/1 "arial";
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .btns{
+            position: absolute;
+            bottom: 5%;
+            left: 65%;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(-50%);
+
+            .prev{
+                cursor: pointer;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                font: 30px/50px "arial";
+                color: black;
+                border-radius: 10px;
+                margin-bottom: 10px;
+
+                &:hover{
+                    background-color: #C39AE3;
+                    color: #DCDBF9;
+                }
+            }
+            .next{
+                cursor: pointer;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                font: 30px/50px "arial";
+                color: black;
+                border-radius: 10px;
+                margin-top: 10px;
+
+                &:hover{
+                    background-color: #C39AE3;
+                    color: #DCDBF9;
+                }
+            }
+        }
+    }
+
+}

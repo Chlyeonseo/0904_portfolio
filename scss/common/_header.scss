@@ -149,49 +149,33 @@ header{
     }
     #slideHeader{
         width: 90vw;
-        height: 10vh;
         border-bottom: 1px solid white;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        margin-left: 5vw;
-        position: relative;
+        margin-left: 2vw;
     
         ul{
-            width: 30%;
-            height: 50%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: flex-end;
+            width: 80%;
+            align-items: center;
     
             li{
-                a{
-                    font: 14px/1 "arial";
-                    color: white;
-                }
+                width: calc(100% / 3);
+                height: 100%;
             }
         }
         .logo{
-            width: 20%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             p{
-                font: bold 30px/1 "arial";
-                text-align: center;
-                color: #fff;
+                font: bold 5vw/1 "Playfair Display";
             }
         }
         >a{
-            position: fixed;
-            top: 80%;
-            right: 4vw;
-            font: bold 20px/70px "arial";
+            top: 15%;
+            right: 1vw;
+            font: bold 0.5px/10vw "arial";
             color: #fff;
-            width: 70px;
-            height: 70px;
-            text-align: center;
+            width: 10vw;
+            height: 10vw;
+            background-color: #A79AE3;
+            border: none;
         }
     }
 }

@@ -307,3 +307,289 @@ $deg : 50deg;
         }
     }
 }
+
+@media screen and (max-width : 277px) {
+
+    $size : 250px;
+    $deg : 50deg;
+
+
+    .slide_fi{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    
+        .slide_wrap{
+            width: $size;
+            height: $size;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: calc(-1 * $size / 2.5); 
+            margin-left: calc(-1 * $size / 2); 
+    
+            ul{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                
+                //li의 공통 스타일
+                li{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.9;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 99999999999px;
+                    transition: 1s;
+    
+                    h2{
+                        font: normal 24px/1 "Playfair Display";
+                        color: #ccc;
+                        position: absolute;
+                        top: 120%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        letter-spacing: 2px;
+                        transition: 1.5s;
+                    }
+                    .inner{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-repeat: inherit;
+                        //자식요소가 부모 요소를 상속받는다.
+                        background-size: inherit;
+                        background-position: inherit;
+                        border-radius: 50%;
+    
+                        &::before,&::after{
+                            content: "";
+                            position: absolute;
+                            top: 0;left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-image: inherit;
+                            background-repeat: inherit;
+                            border-radius: 50%;
+                            transition: 1.5s;
+                        }
+    
+                        //그림자효과
+                        &::before{
+                            top: 10%;
+                            left: 2%;
+                            filter: blur(20px);
+                            opacity: 0.7;
+                        }
+                    }
+                    a{
+                        display: block;
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        bottom: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 20px;
+                        opacity: 0; //0
+                        transition: opacity 1s, bottom 1s, width 0.5s 1s;
+    
+                        &::before,span{
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            font: 11px/1 "anton";
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            letter-spacing: 2px;
+                            color: #fff;
+                            border-radius: 20px;
+                            background-image: inherit;
+                        }
+                        span{
+                            opacity: 0;
+                            text-indent: -40px;
+                            transition: 0.5s 1.4s;
+                            //       듀레이션 딜레이
+                        }
+    
+                        //버튼의 그림자효과
+                        &::before{
+                            transform: translateY(30%);
+                            filter: blur(10px) saturate(2);
+                            opacity: 0.8;
+                        }
+                    }
+                }
+    
+                //li의 개별 스타일
+                li{
+                    &:nth-of-type(1){
+                        transform: translateX(-$size * 3) scale(0.5);
+                        //블러효과     실제 그림
+                        .inner::before,.inner::after{
+                            transform: rotate(-$deg * 3);
+                        }
+                    }
+                    &:nth-of-type(2){
+                        transform: translateX(-$size * 2) scale(0.5);
+                        .inner::before,.inner::after{
+                            transform: rotate(-$deg * 2);
+                        }
+                    }
+                    &:nth-of-type(3){
+                        transform: translateX(-$size * 1) scale(0.5);
+                        .inner::before,.inner::after{
+                            transform: rotate(-$deg * 1);
+                        }
+                    }
+                    &:nth-of-type(4){
+                        opacity: 1;
+                        transform: translateX(0px) scale(1);
+                        h2{
+                            font-size: 14vw;
+                            opacity: 0.8;
+                            color: #fff;
+                            top: -20vh;
+                            letter-spacing: 0px;
+                        }
+                        .inner::before,.inner::after{
+                            transform: rotate($deg * 0);
+                        }
+                        a{
+                            
+                            opacity: 1;
+                            bottom: -18%;
+                            width: 200px;
+    
+                            &.off{
+                                opacity: 0;
+                                display: none;
+                            }
+    
+                            span{
+                                opacity: 1;
+                                text-indent: 0px;
+                            }
+                        }
+                    }
+                    &:nth-of-type(5){
+                        transform: translateX($size * 1) scale(0.5);
+                        .inner::before,.inner::after{
+                            transform: rotate($deg * 1);
+                        }
+                    }
+                    &:nth-of-type(6){
+                        transform: translateX($size * 2) scale(0.5);
+                        .inner::before,.inner::after{
+                            transform: rotate($deg * 2);
+                        }
+                    }
+                    &:nth-of-type(7){
+                        transform: translateX($size * 3) scale(0.5);
+                        .inner::before,.inner::after{
+                            transform: rotate($deg * 3);
+                        }
+                    }
+                }
+            }
+        }
+        .btns{
+            position: absolute;
+            bottom: 13vh;
+            right: 0;
+            display: flex;
+            gap: 30px;
+            transition: 0.5s;
+    
+            div{
+                cursor: pointer;
+                width: 100px;
+                height: 36px;
+                border-radius: 18px;
+                background-color: #999;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font: 12px/1 "anton";
+                color: #fff;
+                letter-spacing: 4px;
+    
+                &:hover{
+                    background-color: #555;
+    
+                }
+            }
+            &.off{
+                right: 5vw;
+                opacity: 0;
+                z-index: -3;
+            }
+        }
+        .pop{
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -50%;
+            background-color: rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 22vh 5vw 10vh 6vw; //시험 문제
+            transition: 0.5s;
+    
+            h2{
+                font: 12vw/1 "Playfair Display";
+                color: #fff;
+                margin-bottom: 40px;
+                opacity: 0;
+                transform: translateX(-100px);
+                transition: 1s 0.3s;
+            }
+            p{
+                font: 22px/1 "arial";
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 50px;
+                opacity: 0;
+                transform: translateX(-100px);
+                transition: 0.5s 0.8s;
+            }
+            .close{
+                width: 200px;
+                height: 40px;
+                border: 2px solid #fff;
+                font: bold 14px/1 "arial";
+                color: #fff;
+                cursor: pointer;
+                transition: 0.5s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                &:hover{
+                    background-color: #fff;
+                    color: #777;
+                }
+            }
+            &.on{
+                left: 0;
+                h2,p,.close{
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+        }
+    }
+}
