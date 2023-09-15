@@ -15,6 +15,7 @@
         width: 45%;
         height: 80%;
         position: relative;
+        
         h1{
             font: bold 3vw/1 "Playfair Display";
             color: #000;
@@ -139,8 +140,8 @@
         height: 80vh;
         margin-left: 12vw;
         margin-top:5vh;
-    
         display: block;
+
         .text{
             width: 100%;
             height: 50%;
@@ -160,6 +161,7 @@
                 .subTxt{
                     position: relative;
                     padding: 5px;
+
                     h2{
                         padding: 0;
                         text-align: center;

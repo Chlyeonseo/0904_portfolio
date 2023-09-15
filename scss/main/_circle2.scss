@@ -68,3 +68,22 @@
         }
     }
 }
+
+@media screen and (max-width : 277px) {
+    #cir2Main{
+        #cir2Wrap{
+            width: 100%;
+            padding: 10px;
+    
+            
+            #list{
+    
+                li{
+                    width: calc(100% / 2);
+                    float: left;
+                    padding: 10px;
+                }    
+            }
+        }
+    }
+}

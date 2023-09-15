@@ -55,3 +55,61 @@ h2{
     text-align: center;
 }
 
+@media screen and (max-width : 277px) {
+    
+    .cir3Pics{
+        width: 100%;
+        height: 60%;
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 40px;
+
+        >div{
+            width: 100%;
+            height: 30%;
+            padding: 20px;
+
+            >div{
+                width: 100%;
+                height: 100%;
+                transition: 1s;
+
+                &:hover{
+                    transform: scale(2);
+                }
+            }
+            .backCir3_1{
+                background: linear-gradient(90deg, #AAF6FA, #9AC4E3, #A79AE3);
+            }
+            .backCir3_2{
+                background-color: #9AC4E3;
+            }
+            .backCir3_3{
+                background-color: #A79AE3;
+            }
+            &.on{
+                background-color: rgba($color: #333, $alpha: 0.3);
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            width: 90%;
+            height: 2px;
+            background-color: black;
+            margin-left: 5%;
+        }
+    }
+    h2{
+        display: block;
+        position: absolute;
+        bottom: 20%;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -15,7 +15,7 @@
         height: 10%;
         display: block;
         text-align: center;
-        font: bold 50px/10% "arial";
+        font: bold 50px/10% "Playfair Display";
         transform: rotate(-90deg);
     }
     .inner{
@@ -29,6 +29,7 @@
             margin: 10% 2%;
 
             h2{
+                font: bold 5px/30% "Playfair Display";
                 width: 100%;
                 height: 30%; 
             }
@@ -58,7 +59,7 @@
             height: 10%;
             display: block;
             text-align: center;
-            font: bold 10vw/10% "arial";
+            font: bold 10vw/10% "Playfair Display";
             transform: rotate(0deg);
             padding: 20px;
         }
@@ -73,7 +74,8 @@
                 display: block;
                 float: none;
     
-                h2{
+                h4{
+                    font: bold 12px/30% "Playfair Display";
                     width: 100%;
                     height: 30%; 
                 }
